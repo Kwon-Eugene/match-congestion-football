@@ -1,0 +1,12 @@
+# Restricted data tiers -- never published (see README: Data availability)
+data/raw/
+data/private/
+
+# R session artifacts
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS clutter
+.DS_Store
+Thumbs.db

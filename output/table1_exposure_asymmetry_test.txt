@@ -1,0 +1,13 @@
+TABLE 1 (support): consecutive-congested-weeks asymmetry
+
+# A tibble: 2 × 9
+  european_team     n mean_max_consec median_max_consec sd_max_consec   p25   p75
+          <dbl> <int>           <dbl>             <dbl>         <dbl> <dbl> <dbl>
+1             0   632            1.82                 2          1.05     1     2
+2             1   344            4.44                 4          1.86     3     6
+# ℹ 2 more variables: max_observed <dbl>, european_label <chr>
+
+Welch t-test (European vs Non-European):
+  Mean difference: 2.622 
+  t = -24.07 , df = 464.8 , p = <2e-16 
+  95% CI: [ -2.836 , -2.4079 ]

@@ -1,0 +1,19 @@
+TABLE 6: Attributable fatigue cost (player-value-at-risk) -- MODULAR
+Coefficient source: UNCONTROLLED interaction (reproduces prior figure).
+
+Coefficients  low: 0.0109  high: 0.0613 
+
+# A tibble: 1 × 4
+  n_team_seasons sum_observed_cost sum_attributable_cost pct_attributable
+           <int>             <dbl>                 <dbl>            <dbl>
+1            931      609082875000          89389157073.             14.7
+
+By squad inequality x European status:
+# A tibble: 4 × 5
+  high_mv_inequality european_team n_team_seasons sum_attributable
+               <dbl>         <dbl>          <int>            <dbl>
+1                  0             0            320      1701058321.
+2                  0             1            142      9704783171.
+3                  1             0            276      8458631362.
+4                  1             1            193     69524684219.
+# ℹ 1 more variable: pct_of_total_attrib <dbl>

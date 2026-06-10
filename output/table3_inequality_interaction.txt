@@ -1,0 +1,62 @@
+TABLE 3: Fatigue cost concentrates in high-MV-inequality squads
+b1 = low-inequality effect; b3 = differential; b1+b3 = high-inequality
+
+                                                  m_het_fat_count
+                                                Fatigue (Poisson)
+Dependent Var.:                                  fatigue_injuries
+                                                                 
+max_consec_congested_weeks                             -0.0029   
+                                                       (0.0141)  
+high_mv_inequality                                     -0.1422*  
+                                                       (0.0618)  
+log(total_squad_value+1)                                0.1612*  
+                                                       (0.0801)  
+log_total_matches                                       0.2563   
+                                                       (0.2634)  
+Num.Players                                             0.0392***
+                                                       (0.0054)  
+Av.Age                                                  0.0526*  
+                                                       (0.0264)  
+max_consec_congested_weeks x high_mv_inequality         0.0499** 
+                                                       (0.0169)  
+Fixed-Effects:                                   ----------------
+team_id                                                       Yes
+season_id                                                     Yes
+league_season_id                                               No
+________________________________________         ________________
+Family                                                    Poisson
+S.E.: Clustered                                       by: team_id
+Observations                                                  952
+R2                                                             --
+
+                                                   m_het_fat_cost     m_het_pts
+                                                log(Fatigue cost)     Pts/Match
+Dependent Var.:                                  log_fatigue_cost Pts_per_Match
+                                                                               
+max_consec_congested_weeks                              -0.0838       0.0080   
+                                                        (0.0745)     (0.0080)  
+high_mv_inequality                                      -0.9381**     0.0368   
+                                                        (0.3242)     (0.0283)  
+log(total_squad_value+1)                                 2.006**      0.4070***
+                                                        (0.7191)     (0.0543)  
+log_total_matches                                       -0.5068      -0.1472   
+                                                        (1.597)      (0.1539)  
+Num.Players                                              0.0575      -0.0403***
+                                                        (0.0323)     (0.0027)  
+Av.Age                                                   0.0182       0.0404***
+                                                        (0.1031)     (0.0097)  
+max_consec_congested_weeks x high_mv_inequality          0.2002*     -0.0031   
+                                                        (0.0797)     (0.0074)  
+Fixed-Effects:                                   ---------------- -------------
+team_id                                                       Yes           Yes
+season_id                                                     Yes            No
+league_season_id                                               No           Yes
+________________________________________         ________________ _____________
+Family                                                        OLS           OLS
+S.E.: Clustered                                       by: team_id   by: team_id
+Observations                                                  956           956
+R2                                                        0.53461       0.84663
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Implied high-inequality fatigue effect (b1 + b3): 0.047 

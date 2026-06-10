@@ -1,0 +1,43 @@
+TABLE A4: Deployment invariance (minutes shares)
+
+                                        m_topq          m_topq_exp
+                                         Top-Q         Top-Q + exp
+Dependent Var.:            top_q_minutes_share top_q_minutes_share
+                                                                  
+max_consec_congested_weeks          -0.0013             -0.0002   
+                                    (0.0016)            (0.0016)  
+Num.Players                          0.0017*             0.0017*  
+                                    (0.0007)            (0.0007)  
+Av.Age                              -0.0103***          -0.0101***
+                                    (0.0025)            (0.0025)  
+log_total_matches                                       -0.0277   
+                                                        (0.0319)  
+Fixed-Effects:             ------------------- -------------------
+team_id                                    Yes                 Yes
+season_id                                  Yes                 Yes
+__________________________ ___________________ ___________________
+S.E.: Clustered                    by: team_id         by: team_id
+Observations                               956                 956
+R2                                     0.27720             0.27797
+
+                                       m_top3         m_top3_exp
+                                        Top-3        Top-3 + exp
+Dependent Var.:            top3_minutes_share top3_minutes_share
+                                                                
+max_consec_congested_weeks         -0.0004             0.0009   
+                                   (0.0012)           (0.0010)  
+Num.Players                        -0.0029***         -0.0030***
+                                   (0.0004)           (0.0004)  
+Av.Age                             -0.0080***         -0.0078***
+                                   (0.0015)           (0.0016)  
+log_total_matches                                     -0.0314   
+                                                      (0.0256)  
+Fixed-Effects:             ------------------ ------------------
+team_id                                   Yes                Yes
+season_id                                 Yes                Yes
+__________________________ __________________ __________________
+S.E.: Clustered                   by: team_id        by: team_id
+Observations                              956                956
+R2                                    0.33531            0.33714
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

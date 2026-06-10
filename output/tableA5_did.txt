@@ -1,0 +1,59 @@
+TABLE A5: Conference-League DiD
+
+--- Panel A: Poisson DiD ---
+                  m_did_fat_full      m_did_fat_nm        m_did_tra_full
+                    Fatigue full Fatigue near-miss Trauma full (placebo)
+Dependent Var.: fatigue_injuries  fatigue_injuries       trauma_injuries
+                                                                        
+treat_post            -0.0252           -0.0807                 0.2767  
+                      (0.1169)          (0.1450)               (0.1773) 
+Num.Players            0.0373***         0.0353***              0.0309**
+                      (0.0053)          (0.0074)               (0.0115) 
+Av.Age                 0.0553*           0.0230                 0.0218  
+                      (0.0252)          (0.0382)               (0.0410) 
+Fixed-Effects:  ----------------  ----------------       ---------------
+team_id                      Yes               Yes                   Yes
+season_id                    Yes               Yes                   Yes
+_______________ ________________  ________________       _______________
+S.E.: Clustered      by: team_id       by: team_id           by: team_id
+Observations                 972               412                   967
+Log-Likelihood          -2,867.1          -1,230.6              -1,543.3
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+--- Panel B: event study (ref = 2020/21) ---
+                               m_event_fat           m_event_..
+                               log Fatigue log Trauma (placebo)
+Dependent Var.:                log_fatigue           log_trauma
+                                                               
+treated_team x rel_season = -6  -0.1634               -0.1605  
+                                (0.2176)              (0.2436) 
+treated_team x rel_season = -5  -0.2071                0.1008  
+                                (0.1725)              (0.2844) 
+treated_team x rel_season = -4  -0.0248               -0.2943  
+                                (0.1797)              (0.2866) 
+treated_team x rel_season = -3  -0.0433               -0.0619  
+                                (0.1696)              (0.2199) 
+treated_team x rel_season = -2  -0.0296                0.1325  
+                                (0.1621)              (0.1928) 
+treated_team x rel_season = 0    0.0593               -0.2402  
+                                (0.1942)              (0.1876) 
+treated_team x rel_season = 1   -0.1176                0.3159  
+                                (0.1892)              (0.2126) 
+treated_team x rel_season = 2   -0.0020                0.2486  
+                                (0.1885)              (0.2431) 
+treated_team x rel_season = 3   -0.0615                0.0259  
+                                (0.1990)              (0.2285) 
+Num.Players                      0.0380***             0.0204**
+                                (0.0056)              (0.0072) 
+Av.Age                           0.0444               -0.0040  
+                                (0.0255)              (0.0218) 
+Fixed-Effects:                 -----------           ----------
+team_id                                Yes                  Yes
+season_id                              Yes                  Yes
+______________________________ ___________           __________
+S.E.: Clustered                by: team_id           by: team..
+Observations                           976                  976
+R2                                 0.58221              0.30718
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

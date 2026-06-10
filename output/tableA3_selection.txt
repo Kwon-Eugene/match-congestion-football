@@ -1,0 +1,28 @@
+TABLE A3: Selection vs causation (lagged-outcome control)
+(both models carry log(total_squad_value+1) + log_total_matches, matching Table 2)
+
+                              m_sel_consec  m_sel_conse..
+                           Consec (no lag) Consec (+ lag)
+Dependent Var.:              Pts_per_Match  Pts_per_Match
+                                                         
+max_consec_congested_weeks       0.0066         0.0064   
+                                (0.0072)       (0.0073)  
+log(total_squad_value+1)         0.4166***      0.4833***
+                                (0.0533)       (0.0779)  
+log_total_matches               -0.1455         0.0676   
+                                (0.1542)       (0.1725)  
+Num.Players                     -0.0398***     -0.0375***
+                                (0.0026)       (0.0030)  
+Av.Age                           0.0411***      0.0541***
+                                (0.0097)       (0.0118)  
+Pts_per_Match_lag                              -0.1892***
+                                               (0.0424)  
+Fixed-Effects:               -------------  -------------
+team_id                                Yes            Yes
+league_season_id                       Yes            Yes
+__________________________   _____________  _____________
+S.E.: Clustered                by: team_id    by: team_id
+Observations                           956            797
+R2                                 0.84602        0.86113
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

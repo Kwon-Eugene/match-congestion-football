@@ -1,0 +1,84 @@
+TABLE 4: Deployment intensity ratio (structural, not strategic)
+
+DV = actual avg MV/min / mean MV of top-11 most valuable players
+Mean: 0.734 | Median: 0.7368 
+
+                                                            m_di_exp
+                                                   Consec + exposure
+Dependent Var.:                                 deployment_intensity
+                                                                    
+max_consec_congested_weeks                                 0.0011   
+                                                          (0.0015)  
+log_total_matches                                         -0.0842** 
+                                                          (0.0298)  
+Num.Players                                               -0.0091***
+                                                          (0.0007)  
+Av.Age                                                    -0.0181***
+                                                          (0.0024)  
+high_mv_inequality                                                  
+                                                                    
+max_consec_congested_weeks x high_mv_inequality                     
+                                                                    
+log(total_squad_value+1)                                            
+                                                                    
+Fixed-Effects:                                  --------------------
+team_id                                                          Yes
+season_id                                                        Yes
+________________________________________        ____________________
+S.E.: Clustered                                          by: team_id
+Observations                                                     956
+R2                                                           0.52195
+
+                                                            m_di_het
+                                                   Consec x HighIneq
+Dependent Var.:                                 deployment_intensity
+                                                                    
+max_consec_congested_weeks                                 0.0007   
+                                                          (0.0017)  
+log_total_matches                                         -0.0784*  
+                                                          (0.0303)  
+Num.Players                                               -0.0089***
+                                                          (0.0007)  
+Av.Age                                                    -0.0180***
+                                                          (0.0023)  
+high_mv_inequality                                        -0.0166*  
+                                                          (0.0080)  
+max_consec_congested_weeks x high_mv_inequality            0.0009   
+                                                          (0.0024)  
+log(total_squad_value+1)                                            
+                                                                    
+Fixed-Effects:                                  --------------------
+team_id                                                          Yes
+season_id                                                        Yes
+________________________________________        ____________________
+S.E.: Clustered                                          by: team_id
+Observations                                                     956
+R2                                                           0.52772
+
+                                                           m_di_full
+                                                     Full (+ talent)
+Dependent Var.:                                 deployment_intensity
+                                                                    
+max_consec_congested_weeks                                 0.0008   
+                                                          (0.0017)  
+log_total_matches                                         -0.0620   
+                                                          (0.0332)  
+Num.Players                                               -0.0091***
+                                                          (0.0007)  
+Av.Age                                                    -0.0190***
+                                                          (0.0027)  
+high_mv_inequality                                        -0.0141   
+                                                          (0.0087)  
+max_consec_congested_weeks x high_mv_inequality            0.0008   
+                                                          (0.0024)  
+log(total_squad_value+1)                                  -0.0212   
+                                                          (0.0189)  
+Fixed-Effects:                                  --------------------
+team_id                                                          Yes
+season_id                                                        Yes
+________________________________________        ____________________
+S.E.: Clustered                                          by: team_id
+Observations                                                     956
+R2                                                           0.53184
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

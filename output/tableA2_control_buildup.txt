@@ -1,0 +1,74 @@
+TABLE A2: Control build-up (none -> +talent -> +talent+exposure)
+
+--- Fatigue (Poisson) ---
+                                 b_none$fat        b_tal$fat            b_te$fat
+                                       None         + Talent + Talent + Exposure
+Dependent Var.:            fatigue_injuries fatigue_injuries    fatigue_injuries
+                                                                                
+max_consec_congested_weeks        0.0398***        0.0337**            0.0232   
+                                 (0.0120)         (0.0126)            (0.0133)  
+Num.Players                       0.0385***        0.0398***           0.0397***
+                                 (0.0052)         (0.0054)            (0.0055)  
+Av.Age                            0.0549*          0.0617*             0.0581*  
+                                 (0.0258)         (0.0269)            (0.0267)  
+log(total_squad_value+1)                           0.1791*             0.1593*  
+                                                  (0.0756)            (0.0800)  
+log_total_matches                                                      0.3185   
+                                                                      (0.2609)  
+Fixed-Effects:             ---------------- ----------------    ----------------
+team_id                                 Yes              Yes                 Yes
+season_id                               Yes              Yes                 Yes
+__________________________ ________________ ________________    ________________
+S.E.: Clustered                 by: team_id      by: team_id         by: team_id
+Observations                            952              952                 952
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+--- Trauma (Poisson, placebo) ---
+                                b_none$tra       b_tal$tra            b_te$tra
+                                      None        + Talent + Talent + Exposure
+Dependent Var.:            trauma_injuries trauma_injuries     trauma_injuries
+                                                                              
+max_consec_congested_weeks        0.0224          0.0220              0.0115  
+                                 (0.0295)        (0.0294)            (0.0394) 
+Num.Players                       0.0360**        0.0360**            0.0360**
+                                 (0.0117)        (0.0117)            (0.0118) 
+Av.Age                            0.0121          0.0125              0.0091  
+                                 (0.0414)        (0.0404)            (0.0409) 
+log(total_squad_value+1)                          0.0110             -0.0073  
+                                                 (0.1563)            (0.1630) 
+log_total_matches                                                     0.3055  
+                                                                     (0.5687) 
+Fixed-Effects:             --------------- ---------------     ---------------
+team_id                                Yes             Yes                 Yes
+season_id                              Yes             Yes                 Yes
+__________________________ _______________ _______________     _______________
+S.E.: Clustered                by: team_id     by: team_id         by: team_id
+Observations                           944             944                 944
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+--- Points/Match (OLS) ---
+                              b_none$pts     b_tal$pts            b_te$pts
+                                    None      + Talent + Talent + Exposure
+Dependent Var.:            Pts_per_Match Pts_per_Match       Pts_per_Match
+                                                                          
+max_consec_congested_weeks     0.0193***     0.0006              0.0066   
+                              (0.0048)      (0.0059)            (0.0072)  
+Num.Players                   -0.0431***    -0.0398***          -0.0398***
+                              (0.0030)      (0.0026)            (0.0026)  
+Av.Age                         0.0220        0.0397***           0.0411***
+                              (0.0115)      (0.0096)            (0.0097)  
+log(total_squad_value+1)                     0.4093***           0.4166***
+                                            (0.0491)            (0.0533)  
+log_total_matches                                               -0.1455   
+                                                                (0.1542)  
+Fixed-Effects:             ------------- -------------       -------------
+team_id                              Yes           Yes                 Yes
+league_season_id                     Yes           Yes                 Yes
+__________________________ _____________ _____________       _____________
+S.E.: Clustered              by: team_id   by: team_id         by: team_id
+Observations                         956           956                 956
+R2                               0.80357       0.84574             0.84602
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
